@@ -2,22 +2,22 @@ const technologies = [
   { name: "React", imgSrc: "/reactLogo.svg", https: "https://reactjs.org" },
   {
     name: "Tailwind",
-    imgSrc: "/tailwindLogo.svg",
+    imgSrc: "${basePath}/tailwindLogo.svg",
     https: "https://tailwindcss.com",
   },
   {
     name: "Framer",
-    imgSrc: "/framerLogo.svg",
+    imgSrc: "${basePath}/framerLogo.svg",
     https: "https://www.framer.com",
   },
   {
     name: "Next.js",
-    imgSrc: "/nextJsLogo.svg",
+    imgSrc: "${basePath}/nextJsLogo.svg",
     https: "https://nextjs.org",
   },
   {
     name: "Typescript",
-    imgSrc: "/tsLogo.svg",
+    imgSrc: "${basePath}/typescriptLogo.svg",
     https: "https://www.typescriptlang.org",
   },
 ];
