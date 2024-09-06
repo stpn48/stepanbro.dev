@@ -31,7 +31,7 @@ async function fetchRepos() {
       body: JSON.stringify({ query }),
     });
     const data = await res.json();
-    repos = data.data.user.pinnedItems.edges.map((repo: any) => {
+    repos = data.data.user.pinnedItems.edges.map((repo: { node: Repository }) => {
       return {
         id: repo.node.id,
         name: repo.node.name,
