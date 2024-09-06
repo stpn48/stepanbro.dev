@@ -1,5 +1,3 @@
-type Props = {};
-
 const technologies = [
   { name: "React", imgSrc: "/reactLogo.svg", https: "https://reactjs.org" },
   {
@@ -24,7 +22,7 @@ const technologies = [
   },
 ];
 
-export function TechnologiesUsing({}: Props) {
+export function TechnologiesUsing() {
   return (
     <div className="flex flex-col font-geist">
       <h1 className="mt-16 text-xl text-[#ffffff]">stack</h1>

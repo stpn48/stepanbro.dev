@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',  // Enables static export
-  assetPrefix: './', // Ensures correct path resolution for assets
+  distDir: 'dist',
   images: {
-    unoptimized: true, // Disables Next.js image optimization (needed for GitHub Pages)
+    unoptimized: true, // Disables Next.js image optimization
   },
 };
 

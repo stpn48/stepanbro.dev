@@ -1,14 +1,12 @@
 import { Link } from "@/app/Link";
 
-type Props = {};
-
 const links = [
   { url: "https://www.instagram.com/stepanbroz1", name: "instagram" },
   { url: "https://github.com/stepan-rd", name: "github" },
   { url: "mailto:stpnbrozbusiness@gmail.com", name: "contact" },
 ];
 
-export function Links({}: Props) {
+export function Links() {
   return (
     <div className="mt-16">
       <h1 className="text-xl text-[#ffffff]">links</h1>
