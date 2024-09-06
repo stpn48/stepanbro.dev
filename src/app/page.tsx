@@ -17,8 +17,8 @@ export default async function Home() {
         <TechnologiesUsing />
         <Projects />
         <Links />
-        <hr className="my-10 border-[#4e4e4e]" />
-        <h3 className="text-[#adadad]">Štěpán Brož</h3>
+        <hr className="my-10 border-[#3d3d3d]" />
+        <h3 className="text-[#7e7e7e]">Štěpán Brož</h3>
       </main>
     </div>
   );
