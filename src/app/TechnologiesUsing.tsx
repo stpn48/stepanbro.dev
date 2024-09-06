@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const technologies = [
   { name: "React", imgSrc: "/reactLogo.svg", https: "https://reactjs.org" },
   {
@@ -35,7 +37,12 @@ export function TechnologiesUsing() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={technology.imgSrc} alt="React Logo" />
+            <Image
+              src={technology.imgSrc}
+              alt={technology.name}
+              width={28}
+              height={28}
+            />
           </a>
         ))}
       </div>
