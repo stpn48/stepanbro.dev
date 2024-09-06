@@ -1,27 +1,33 @@
+import getConfig from "next/config";
+
+const { publicRuntimeConfig } = getConfig();
+
+const basePath = publicRuntimeConfig.basePath || "";
+
 const technologies = [
   {
     name: "React",
-    imgSrc: "${basePath}/reactLogo.svg",
+    imgSrc: `${basePath}/reactLogo.svg`,
     https: "https://reactjs.org",
   },
   {
     name: "Tailwind",
-    imgSrc: "${basePath}/tailwindLogo.svg",
+    imgSrc: `${basePath}/tailwindLogo.svg`,
     https: "https://tailwindcss.com",
   },
   {
     name: "Framer",
-    imgSrc: "${basePath}/framerLogo.svg",
+    imgSrc: `${basePath}/framerLogo.svg`,
     https: "https://www.framer.com",
   },
   {
     name: "Next.js",
-    imgSrc: "${basePath}/nextJsLogo.svg",
+    imgSrc: `${basePath}/nextLogo.svg`,
     https: "https://nextjs.org",
   },
   {
     name: "Typescript",
-    imgSrc: "${basePath}/typescriptLogo.svg",
+    imgSrc: `${basePath}/typescriptLogo.svg`,
     https: "https://www.typescriptlang.org",
   },
 ];
