@@ -22,7 +22,7 @@ async function fetchRepos() {
   try {
     let repos: Repository[] = [];
     const res = await fetch("https://api.github.com/graphql", {
-      next: { revalidate: 60 },
+      next: { revalidate: 43200 },
       method: "POST",
       headers: {
         "Content-Type": "application/json",
