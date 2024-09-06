@@ -1,5 +1,9 @@
 const technologies = [
-  { name: "React", imgSrc: "/reactLogo.svg", https: "https://reactjs.org" },
+  {
+    name: "React",
+    imgSrc: "${basePath}/reactLogo.svg",
+    https: "https://reactjs.org",
+  },
   {
     name: "Tailwind",
     imgSrc: "${basePath}/tailwindLogo.svg",
