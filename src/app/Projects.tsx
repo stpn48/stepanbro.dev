@@ -53,7 +53,7 @@ export async function Projects() {
   return (
     <div className="mt-16">
       <h1 className="text-xl text-[#ffffff]">projects</h1>
-      <div className="grid grid-cols-2 grid-rows-2 gap-10 mt-6">
+      <div className="grid grid-cols-2 grid-rows-3 gap-10 mt-6">
         {pinnedRepos?.map((repo: Repository) => (
           <a
             href={repo.url}
