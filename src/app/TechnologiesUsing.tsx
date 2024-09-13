@@ -1,7 +1,11 @@
 import Image from "next/image";
 
 const technologies = [
-  { name: "React", imgSrc: "/reactLogo.svg", https: "https://reactjs.org" },
+  {
+    name: "React",
+    imgSrc: "/reactLogo.svg",
+    https: "https://reactjs.org",
+  },
   {
     name: "Tailwind",
     imgSrc: "/tailwindLogo.svg",
