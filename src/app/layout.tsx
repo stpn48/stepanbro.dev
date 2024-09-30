@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/app/globals.css";
+import { ReactQueryProvider } from "@/app/components/ReactQueryProvider";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,11 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <ReactQueryProvider>
+        <body className={`${geistSans.variable} antialiased`}>
+          {children}
+          <Toaster />
+        </body>
+      </ReactQueryProvider>
     </html>
   );
 }

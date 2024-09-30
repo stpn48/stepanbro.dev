@@ -10,16 +10,18 @@
   },
   "dependencies": {
     "@apollo/client": "^3.11.8",
+    "@tanstack/react-query": "^5.56.2",
     "axios": "^1.7.7",
     "graphql": "^16.9.0",
-    "next": "14.2.8",
+    "next": "^14.2.13",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-hot-toast": "^2.4.1"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.8",
     "gh-pages": "^6.1.1",

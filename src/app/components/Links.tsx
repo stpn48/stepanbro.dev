@@ -1,4 +1,4 @@
-import { Link } from "@/app/Link";
+import { Link } from "@/app/components/Link";
 
 const links = [
   { url: "https://www.instagram.com/stepanbroz1", name: "instagram" },
