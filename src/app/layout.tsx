@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "@/app/globals.css";
 import { ReactQueryProvider } from "@/app/components/ReactQueryProvider";
 import { Toaster } from "react-hot-toast";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,6 +26,7 @@ export default function RootLayout({
       <ReactQueryProvider>
         <body className={`${geistSans.variable} antialiased`}>
           {children}
+          <SpeedInsights />
           <Toaster />
         </body>
       </ReactQueryProvider>
