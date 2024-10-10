@@ -1,5 +1,3 @@
-// src/app/actions/getPinnedRepos.ts
-
 "use server";
 
 import { Repository } from "@/types";
