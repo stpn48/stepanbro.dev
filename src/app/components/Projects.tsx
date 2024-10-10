@@ -3,7 +3,6 @@
 import { Repo } from "@/types";
 import { useQuery } from "@tanstack/react-query";
 import { getPinnedRepos } from "../actions/getPinnerRepos";
-import { useEffect } from "react";
 
 export async function Projects() {
   const {
