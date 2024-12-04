@@ -7,7 +7,7 @@ import React from "react";
 export default async function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] py-8 min-h-screen">
-      <main className="max-w-2xl flex flex-col gap-16 p-4 mx-auto">
+      <main className="max-w-2xl flex flex-col gap-[70px] p-4 mx-auto">
         <AboutMe />
         <Tools />
         <Projects />
