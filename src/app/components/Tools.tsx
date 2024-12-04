@@ -16,11 +16,7 @@ const tools = [
     imgSrc: "/tailwindLogo.svg",
     https: "https://tailwindcss.com",
   },
-  {
-    name: "Supabase",
-    imgSrc: "/supabaseLogo.svg",
-    https: "https://supabase.com/",
-  },
+
   {
     name: "Typescript",
     imgSrc: "/tsLogo.svg",
@@ -35,6 +31,11 @@ const tools = [
     name: "AuthJS",
     imgSrc: "/auth-js-logo.svg",
     https: "https://authjs.dev/",
+  },
+  {
+    name: "Supabase",
+    imgSrc: "/supabaseLogo.svg",
+    https: "https://supabase.com/",
   },
 ];
 
