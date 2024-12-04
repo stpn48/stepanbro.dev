@@ -1,9 +1,9 @@
 import { Link } from "@/app/components/Link";
 
 const links = [
-  { url: "https://www.instagram.com/stepanbroz1", name: "instagram" },
   { url: "https://github.com/stpn48", name: "github" },
   { url: "mailto:stpnbrozbusiness@gmail.com", name: "contact" },
+  { url: "https://www.instagram.com/stepanbroz1", name: "instagram" },
 ];
 
 export function Links() {
