@@ -31,6 +31,11 @@ const tools = [
     imgSrc: "/shadcn-logo.svg",
     https: "https://ui.shadcn.com/",
   },
+  {
+    name: "AuthJS",
+    imgSrc: "/auth-js-logo.svg",
+    https: "https://authjs.dev/",
+  },
 ];
 
 export function Tools() {
