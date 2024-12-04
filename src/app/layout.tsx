@@ -1,6 +1,5 @@
 import { ReactQueryProvider } from "@/app/components/ReactQueryProvider";
 import "@/app/globals.css";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Toaster } from "react-hot-toast";
@@ -26,7 +25,7 @@ export default function RootLayout({
       <ReactQueryProvider>
         <body className={`${geistSans.variable} bg-[#0a0a0a] antialiased`}>
           {children}
-          <SpeedInsights />
+
           <Toaster />
         </body>
       </ReactQueryProvider>

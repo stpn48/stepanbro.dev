@@ -42,7 +42,7 @@ const tools = [
 export function Tools() {
   return (
     <div className="flex flex-col gap-6 font-geist">
-      <h1 className="text-xl text-[#ffffff]">tools</h1>
+      <h1 className="text-xl text-[#ffffff]">some tools i use</h1>
       <div className="flex items-center gap-4 w-fit">
         {tools.map((tool) => (
           <Tool key={tool.name} tool={tool} />
