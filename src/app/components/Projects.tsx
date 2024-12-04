@@ -2,9 +2,10 @@
 
 import { Repo } from "@/types";
 import { useQuery } from "@tanstack/react-query";
+import Link from "next/link";
 import { getPinnedRepos } from "../actions/getPinnerRepos";
 
-export async function Projects() {
+export function Projects() {
   const {
     data: pinnedRepos,
     isLoading,
@@ -12,7 +13,7 @@ export async function Projects() {
   } = useQuery({
     queryKey: ["pinnedRepos"],
     queryFn: () => getPinnedRepos(),
-    staleTime: 1000 * 60 * 10 * 6 * 12,
+    staleTime: 1000 * 60 * 60, // 1 hour
   });
 
   if (isLoading) {
@@ -24,14 +25,23 @@ export async function Projects() {
   }
 
   return (
-    <div className="mt-16">
-      <h1 className="text-xl text-[#ffffff]">projects</h1>
+    <div className="fle flex-col gap-2">
+      <h1 className="text-xl text-[#ffffff]">some projects</h1>
       <div className="grid grid-cols-3 grid-rows- gap-10 mt-6">
         {pinnedRepos?.map((repo: Repo) => (
-          <a href={repo.url} target="_blank" rel="noopener noreferrer" key={repo.id}>
-            <h1 className="text-[#ffffff] underline">{repo.name}</h1>
+          <Link href={repo.url} target="_blank" rel="noopener noreferrer" key={repo.id}>
+            <h1
+              className="text-[#ffffff] underline truncate"
+              style={{
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
+            >
+              {repo.name}
+            </h1>
             <p className="mt-3 text-[#adadad] text-sm">{repo.description}</p>
-          </a>
+          </Link>
         ))}
       </div>
     </div>

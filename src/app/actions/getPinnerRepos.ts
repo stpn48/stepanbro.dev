@@ -26,7 +26,7 @@ export async function getPinnedRepos() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.NEXT_GITHUB_TOKEN}`,
+        Authorization: `Bearer ${process.env.NEXT_GITHUB_TOKEN}`, // TODO: Expires on Fri, Dec 20 2024.
       },
       body: JSON.stringify({ query }),
     });

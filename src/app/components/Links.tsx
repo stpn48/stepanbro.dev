@@ -8,7 +8,7 @@ const links = [
 
 export function Links() {
   return (
-    <div className="mt-16">
+    <div className="flex flex-col gap-2">
       <h1 className="text-xl text-[#ffffff]">links</h1>
       <div className="mt-4 flex gap-10 text-[#adadad]">
         {links.map((link) => (

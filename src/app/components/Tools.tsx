@@ -41,9 +41,9 @@ const tools = [
 
 export function Tools() {
   return (
-    <div className="flex flex-col font-geist">
-      <h1 className="mt-16 text-xl text-[#ffffff]">tools</h1>
-      <div className="flex items-center gap-5 mt-6 w-fit">
+    <div className="flex flex-col gap-6 font-geist">
+      <h1 className="text-xl text-[#ffffff]">tools</h1>
+      <div className="flex items-center gap-4 w-fit">
         {tools.map((tool) => (
           <Tool key={tool.name} tool={tool} />
         ))}
